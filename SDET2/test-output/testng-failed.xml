@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.autodeskcrm.orgtest.CreateOrganizationTest">
+      <class name="com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest">
         <methods>
-          <include name="createORgtest"/>
+          <include name="createAndDeletContactWithOrgTest"/>
         </methods>
-      </class> <!-- com.autodeskcrm.orgtest.CreateOrganizationTest -->
+      </class> <!-- com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,5 @@
 package com.autodeskcrm.gerericutils;
 
-import java.awt.Desktop.Action;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
@@ -24,6 +23,7 @@ public class WebDriverUtils {
 	 * wait for all element to load in DOM document
 	 * @param driver
 	 */
+	static  String mainId = null;
 	public void waitForPagetoLoad(WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
@@ -130,6 +130,26 @@ public class WebDriverUtils {
 			
 		}
 	}
+	/**
+	 * Switch to popup window
+	 * @param driver
+	 */
+	public void switchToPoupWindow(WebDriver driver) {
+		mainId = driver.getWindowHandle();
+		Set<String> allId = driver.getWindowHandles();
+		for(String id : allId) {
+			if(!id.equals(mainId)) {
+				driver.switchTo().window(id);
+			}
+		}
+	}
+	/**
+	 * Switch to Main window
+	 * @param driver
+	 */
+	public void switchToMainWindow(WebDriver driver) {
+		driver.switchTo().window(mainId);
+	}
 	
 	public void alertOk(WebDriver driver) {
 		driver.switchTo().alert().accept();
@@ -137,6 +157,9 @@ public class WebDriverUtils {
 	public void alertCancel(WebDriver driver) {
 		driver.switchTo().alert().dismiss();
 		
+	}
+	public String getAlertText(WebDriver driver) {
+		return driver.switchTo().alert().getText();
 	}
 	
      public void moveMouseToElemnet(WebDriver driver , WebElement element) {

@@ -109,7 +109,7 @@ public class CreateContacWithOrgNametTest {
 		
 		driver.findElement(By.xpath("//input[@title='Save [Alt+S]']")).click();
 		
-		/*step  10: verify the Org*/
+		/*step  10: verify the Contact*/
 		String actconatct = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
 		Assert.assertTrue(actconatct.contains(contactName));
 		
