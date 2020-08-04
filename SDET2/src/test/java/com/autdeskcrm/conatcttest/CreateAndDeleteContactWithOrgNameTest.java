@@ -162,8 +162,8 @@ public class CreateAndDeleteContactWithOrgNameTest {
 		wLib.alertOk(driver);
 			/*cross chk the deletion of org */
 		WebElement searchField1 = driver.findElement(By.name("search_text"));
-		searchField.clear();
-		searchField.sendKeys(orgName);
+		searchField1.clear();
+		searchField1.sendKeys(orgName);
 		WebElement sWb3 = driver.findElement(By.xpath("//div[@id='basicsearchcolumns_real']/select"));
 		wLib.select(sWb3, selectLabel);
 		driver.findElement(By.name("submit")).click();
