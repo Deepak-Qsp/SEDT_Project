@@ -1,77 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42190" started-at="2020-08-03T17:37:51Z" finished-at="2020-08-03T17:38:33Z">
+  <suite name="Default suite" duration-ms="44765" started-at="2020-08-04T09:10:30Z" finished-at="2020-08-04T09:11:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42190" started-at="2020-08-03T17:37:51Z" finished-at="2020-08-03T17:38:33Z">
+    <test name="Default test" duration-ms="44765" started-at="2020-08-04T09:10:30Z" finished-at="2020-08-04T09:11:15Z">
       <class name="com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest">
-        <test-method status="FAIL" signature="createAndDeletContactWithOrgTest()[pri:0, instance:com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest@2f686d1f]" name="createAndDeletContactWithOrgTest" duration-ms="42133" started-at="2020-08-03T17:37:51Z" finished-at="2020-08-03T17:38:33Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-2TMQMFN', ip: '192.168.118.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DK\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 95fc32572c73a398d615b195b3823382]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-2TMQMFN', ip: '192.168.118.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DK\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 95fc32572c73a398d615b195b3823382
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
-at com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest.createAndDeletContactWithOrgTest(CreateAndDeleteContactWithOrgNameTest.java:165)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method status="PASS" signature="configBS()[pri:0, instance:com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest@4883b407]" name="configBS" is-config="true" duration-ms="945" started-at="2020-08-04T09:10:29Z" finished-at="2020-08-04T09:10:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method status="PASS" signature="configBC()[pri:0, instance:com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest@4883b407]" name="configBC" is-config="true" duration-ms="4037" started-at="2020-08-04T09:10:30Z" finished-at="2020-08-04T09:10:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest@4883b407]" name="configBM" is-config="true" duration-ms="3767" started-at="2020-08-04T09:10:34Z" finished-at="2020-08-04T09:10:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="PASS" signature="createAndDeletContactWithOrgTest()[pri:0, instance:com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest@4883b407]" name="createAndDeletContactWithOrgTest" duration-ms="35083" started-at="2020-08-04T09:10:38Z" finished-at="2020-08-04T09:11:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAndDeletContactWithOrgTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest@4883b407]" name="configAM" is-config="true" duration-ms="1541" started-at="2020-08-04T09:11:13Z" finished-at="2020-08-04T09:11:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest@4883b407]" name="configAC" is-config="true" duration-ms="311" started-at="2020-08-04T09:11:14Z" finished-at="2020-08-04T09:11:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method status="PASS" signature="configAS()[pri:0, instance:com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest@4883b407]" name="configAS" is-config="true" duration-ms="2" started-at="2020-08-04T09:11:15Z" finished-at="2020-08-04T09:11:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
       </class> <!-- com.autdeskcrm.conatcttest.CreateAndDeleteContactWithOrgNameTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
